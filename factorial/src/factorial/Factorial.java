@@ -3,40 +3,34 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hola_gi;
+package factorial;
 
 import javax.swing.JOptionPane;
+import m_factorial.m_factorial;
 
 /**
  *
  * @author usuario
  */
-public class Hola_gi {
+public class Factorial {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         
-         String nombre="";
-    
-    
-    nombre=JOptionPane.showInputDialog("dime tu nombre");
-    
-    JOptionPane.showMessageDialog(null,"HOLA ya hice un cambio en mi git had"+nombre+"ok men");
+        int lim;
         
-       
-    
+        lim=Integer.parseInt(JOptionPane.showInputDialog("ingres un limite"));
+        
+        m_factorial ob1=new m_factorial(lim);
+        
+        ob1.fac();
+        
+        
+        
+        
         // TODO code application logic here
     }
-    
-   
-            
-   
-    
-    
-    
-    
-    
     
 }
